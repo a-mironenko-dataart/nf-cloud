@@ -1,58 +1,149 @@
-# name: "Hello World (Locally)":
-
-# TIP TAP / definition
 {
     "directory": "./test_workflows/hello_world",
     "script": "main.nf",
-    "args": {
-        "dynamic": {
-        "inFile": {
-            "type": "path",
-            "desc": "Single file",
-            "selectable_files": true,
-            "selectable_folders": false
-        },
-        "inFolder": {
-            "type": "path",
-            "desc": "Single folder",
-            "selectable_files": false,
-            "selectable_folders": true
-        },
-        "inFiles": {
-            "type": "paths",
-            "desc": "Multiple files",
-            "selectable_files": true,
-            "selectable_folders": false
-        },
-        "inFolders": {
-            "type": "paths",
-            "desc": "Multiple folder",
-            "selectable_files": false,
-            "selectable_folders": true
-        },
-        "txtFiles": {
-            "type": "file-glob",
-            "desc": "File \"regex\", e.g. *.txt"
-        },
-        "numberOfNewlines": {
-            "type": "number",
-            "desc": "Number input"
-        },
-        "singleLineText": {
-            "type": "text",
-            "desc": "Single line text"
-        },
-        "multilineText": {
-            "type": "text",
-            "desc": "Multiline text",
-            "is_multiline": true
-        }
-        },
-        "static": {
-        "outDir": {
-            "type": "text",
-            "value": "./"
-        }
-        }
+"nextflow_parameters": [
+    {
+      "name": "proident nulla",
+      "value": "nope"
+    },
+    {
+      "name": "nisi deserunt anim sit",
+      "value": "nope"
     }
+  ],
+    "args": {
+        "dynamic": [
+            {
+                "name": "inFile",
+                "type": "path",
+                "desc": "Single file",
+                "selectable_files": true,
+                "selectable_folders": false,
+                "label": "non"
+            },
+            {
+                "name": "inFolder",
+                "type": "path",
+                "desc": "Single folder",
+                "label": "non",
+                "selectable_files": false,
+                "selectable_folders": true
+            },
+            {
+                "name": "inFiles",
+                "type": "paths",
+                "desc": "Multiple files",
+                "label": "non",
+                "selectable_files": true,
+                "selectable_folders": false
+            },
+            {
+                "name": "inFolders",
+                "type": "paths",
+                "desc": "Multiple folder",
+                "label": "non",
+                "selectable_files": false,
+                "selectable_folders": true
+            },
+            {
+                "name": "txtFiles",
+                "type": "file-glob",
+                "desc": "File \"regex\", e.g. *.txt",
+                "label": "non",
+                "selectable_files": false,
+                "selectable_folders": false
+            },
+            {
+                "name": "numberOfNewlines",
+                "type": "number",
+                "desc": "Number input",
+                "label": "non",
+                "selectable_files": false,
+                "selectable_folders": false
+            },
+            {
+                "name": "singleLineText",
+                "type": "text",
+                "desc": "Single line text",
+                "label": "non",
+                "selectable_files": false,
+                "selectable_folders": false
+            },
+            {
+                "name": "multilineText",
+                "type": "text",
+                "desc": "Multiline text",
+                "label": "non",
+                "selectable_files": false,
+                "selectable_folders": false
+            }
+        ],
+        "static": [
+            {
+                "name": "outDir",
+                "type": "text",
+                "value": "./"
+            }
+        ]
+    },
+  "results": [
+    {
+      "type": "images",
+      "header": "in adipisicing ut",
+      "images": [
+        {
+          "path": "aute",
+          "description": "dolore est"
+        },
+        {
+          "path": "exercitation sed cupidatat",
+          "description": "quis"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "path": "pariatur",
+      "header": "occaecat quis elit commodo",
+      "description": "non nisi"
+    },
+    {
+      "type": "images",
+      "header": "culpa ea dolor",
+      "images": [
+        {
+          "path": "ut ex",
+          "description": "ut dolor ullamco culpa enim"
+        },
+        {
+          "path": "incididunt ea pariatur proident exercitation",
+          "description": "sint est labore"
+        },
+        {
+          "path": "irure",
+          "description": "incididunt"
+        },
+        {
+          "path": "qui",
+          "description": "labore in"
+        },
+        {
+          "path": "officia eu qui sit fugiat",
+          "description": "sed"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "path": "dolore est anim",
+      "header": "veniam laboris ut nulla minim",
+      "description": "officia non dolore est nisi"
+    },
+    {
+      "type": "pdf",
+      "path": "sit",
+      "header": "esse adipisicing nulla exercitation",
+      "description": "ea"
+    }
+  ]
 }
